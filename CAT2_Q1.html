@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css"> </head>
 <body>
-<h2>
-<b>List of Available Courses</b>
-</h2>
-<ul>
-<li>Data Structures & Algorithm</li>
-<li>Web Technology</li>
-<li>Aptitude & Logical Reasoning</li><li>Programming Languages</li>
-</ul>
-<h2>Data Structures Topics</h2>
-<ol>
-<li>Array</li>
-<li>Linked List</li>
-<li>Stacks</li>
-<li>Queues</li>
-<li>Trees</li>
-<li>Graphs</li>
-</ol>
+  <div class="container">
+    <h1>Register</h1>
+    <form action="process_form.php" method="post">  <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <br>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      <br>
+
+      <label for="password">Set Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+      <br>
+
+      <br>
+      <input type="submit" value="REGISTER">
+    </form>
+  </div>
 </body>
 </html>
